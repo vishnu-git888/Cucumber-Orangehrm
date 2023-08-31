@@ -21,6 +21,7 @@ public class StepDefinition extends BaseClass  {
 
 	@When("^User Enter The Username In Username Field$")
 	public void user_Enter_The_Username_In_Username_Field() throws Throwable {
+		implicitly_Wait(2000);
 	   inputOnElement(pom.getLp().getUsername(), "Admin");
 	}
 
